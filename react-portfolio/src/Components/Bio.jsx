@@ -4,20 +4,33 @@ export function Bio() {
   return (
     <>
   <div>
-  <div className="flex">
+  <div className="flex" style={{justifyContent: "space-evenly"}}>
     <img id="portrait" src='./assets/IMG_1304' alt="Picture of Zach" />
     <div>
-      <h2 id="About-Me" style={{width: "400px"}}>About Me</h2>
+      {/* <h2 id="About-Me" style={{width: "400px"}}>Snapshot</h2> */}
       <div className="bio-text">
-        <p>I'm currently pursuing a full stack web development certification through UCLA, with a planned completion
-          date of April 11, 2024.
-          Prior to this, I graduated in 2021 with a Bachelor of Science in Business Management from CSULB. Prior to,
-          during, and after graduating, I've gained experience in various industries.
-          This includes music marketing, Google Adwords marketing, hospitality, restaurant project management, and the
-          automotive industry. </p>
-        <p>I enjoy working creatively and am constantly striving to further my knowledge so I may achieve my goals.
-          I'm excited about the potential a web development career provides
-          and cannot wait to begin this journey! </p>
+         <ul className="snapshotUl">
+          <div className="snapshotFlex">
+          <h4>B.S. in Business Management</h4>
+          <h3>LB Logo Placeholder</h3>
+          </div>
+          <div className="snapshotFlex">
+        <h4>Industry Experience In:</h4>
+         <ul style={{display: "block"}}>
+          <div className="workHistoryLi">
+          <li>Automotive</li>
+          <li>Music Marketing</li>
+          <li>Restaurant Project Management</li>
+          <li>Hospitality</li>
+          <li>Manufacturing</li>
+          </div>
+         </ul>
+        </div>
+        <div className="snapshotFlex">
+        <h4>Strong growth mindset with a multide of hobbies and pastimes</h4>
+        <h3>Image placeholder</h3>
+        </div>
+         </ul>
       </div>
     </div>
   </div>
