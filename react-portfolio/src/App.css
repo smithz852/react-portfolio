@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(223, 231, 255);
+  display: block !important;
 }
 
 h1 {
