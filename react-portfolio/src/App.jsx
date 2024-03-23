@@ -1,18 +1,12 @@
+import React from 'react';
 import { useState } from 'react'
 import './App.css'
+import { PortfolioNavbar } from './Components/PortfolioNavbar'
 
 function App() {
   return (
     <>
-      <header className="flex">
-        <h1>Zachary Smith</h1>
-        <ul>
-          <li><a href="#About-Me"> About Me</a></li>
-          <li><a href="#Work"> Work</a></li>
-          <li><a href="#Contact-Me"> Contact Me</a></li>
-          <li><a href="./Assets/Media/Zachary Smith - Resume 2023.pdf"> Resume</a></li>
-        </ul>
-      </header>
+      <PortfolioNavbar />
       <div>
         <div className="flex">
           <img id="portrait" src='./assets/IMG_1304' alt="Picture of Zach" />
