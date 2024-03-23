@@ -1,42 +1,370 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+html {
+  height: 98%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(223, 231, 255);
+}
+
+h1 {
+  flex-basis: 50%;
+  flex-wrap: nowrap;
+  font-size: 32pt;
+  margin-left: 3%;
+}
+
+h2 {
+  font-size: 35pt;
+  color: black;
+  margin: 0%;
+  width: 141px;
+  padding-right: 6.5%;
+  margin-left: 3%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  font-size: 20pt;
+  color: black;
+  margin: 0%;
+  width: 141px;
+  padding-right: 5%;
+  margin-left: 3%;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15pt;
+}
+
+ a {
+    color: black;
+    text-decoration: none;
+ }
+
+ /* gives white text appearence when hovering over text links */
+ a:hover {
+    color: white;
+    text-decoration: underline;
+ }
+
+footer {
+  margin-bottom: 1%;
+}
+
+ header {
+  display: flex;
+  background-color: rgb(98, 96, 243);
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+img {
+  object-fit: fill;
+  max-width: 100%;
+}
+/* sets flex boxes throughout page */
+.flex {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 2 1 0;
+  list-style: none;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+li {
+  flex: 1 1 200px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Parameters for self portrait in about me section */
+#portrait {
+  position: relative;
+  width: 192px;
+  height: 233px;
+  border: black solid 3px;
+  border-radius: 10% 10% 10% 10%;
+  margin-left: 1%;
+  margin-bottom: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+img {
+   position: relative;
 }
 
+
+.bio-text {
+  margin-right: 10%;
+  padding-left: 3%;
+}
+/* flex box specs for work section */
+.work-flexbox {
+  position: relative;
+  display: flex;
+  flex-flow: wrap-reverse;
+  border-left: 5px solid aqua ;
+}
+/* Sets basis for four smallest buttons in work section */
+.container {
+  position: relative;
+  flex-basis: 41%;
+  margin: 3%;
+  text-align: center;
+  color: black;
+}
+/* specs for large picture */
+#top-container {
+  position: relative;
+  flex-basis: 88%;
+  text-align: center;
+  color: black;
+  margin-left: 1%;
+}
+/* gurther card positioning and design for four smallest buttons */
 .card {
-  padding: 2em;
+  position: relative;
+  border: 4px solid silver;
+  margin-left: 4%;
+}
+/* further specs for largest button */
+#top-card {
+  position: relative;
+  border: 4px solid silver;
+  margin-left: 4%;
+}
+/* overlay text for small buttons */
+.card-placeholder {
+  position: absolute;
+  bottom: 3%;
+  left: 4.5%;
+}
+/* overlay text for large button */
+.card-top {
+  position: absolute;
+  bottom: 2%;
+  left: 4.5%;
+}
+/* overlay box for large button */
+.top-descr {
+  background-color: silver;
+  padding: 2%;
+  box-shadow: 3px 3px 10px;
+}
+/* overlay box for small buttons */
+.card-descr {
+  background-color: silver;
+  padding: 2%;
+  box-shadow: 3px 3px 10px;
+}
+/* bolds title of button description */
+.project-descr {
+  margin: 0;
+  font-weight: bold;
+  font-size: 15pt;
+ }
+/* font size for other descriptions in overlay text */
+ .project-text {
+  font-size: 10pt;
+ }
+
+ .footer-block {
+  display: flex;
+  background-color: rgb(98, 96, 243);
+  width: 100%;
+  align-items: center;
+  margin-top: 5%;
 }
 
-.read-the-docs {
-  color: #888;
+.contact-me {
+  border-left: aqua solid 5px;
+  height: 110px;
+}
+
+.myButton{
+    cursor:pointer;
+    opacity: 0.6;
+  transition: 0.3s;
+}
+
+.myButton:hover {opacity: 1}
+
+/* Media screen section */
+
+@media screen and (max-width: 1024px) {
+  h2 {
+     margin-left: 4%;
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+ p {
+font-size: 13pt; }
+ 
+  .card-descr {
+    width: 90%;
+ }
+
+ .top-descr {
+   width: 50%;
+ }
+
+ .project-descr {
+  font-size: 85%;
+ }
+
+ .project-text {
+   font-size: 85%;
+ }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 12pt;
+  }
+  
+  .inline   {
+      flex: 1 2 0;
+   }
+
+   header {
+     text-align: center;
+     flex-direction: column;
+     width: 100%;
+   }
+
+   h2 {
+      padding-right: 4%;
+   }
+
+  ul  {
+justify-content: end;
+    padding-left: 0;
+    
+   }
+
+   li {
+    max-height: 50px;
+align-content: start;   }
+
+  #portrait {
+   align-content: center;
+ }
+
+ .work-flexbox {
+  justify-content: start;
+  margin-left: 3.5%;
+ }
+
+ .card-descr {
+  width: 82%;
+}
+
+.top-descr {
+ width: 52%;
+}
+
+.project-descr {
+  font-size: 67%;
+}
+
+.project-text {
+ font-size: 55%;
+}
+
+}
+
+@media screen and (max-width: 620px) {
+  h1 {
+    min-width: 95%;
+  }
+
+  h3 {
+    margin-top: 2%;
+    margin-left: 0%;
+    padding: 0%;
+  }
+
+ body {
+  padding: 0px;
+  margin: 0;
+ }
+
+ ul {
+  flex-direction: column;
+ }
+ 
+ div {
+  flex-direction: column;
+ }
+
+ .work-sidebar {
+    margin-bottom: 3%;
+ }
+
+  .work-flexbox {
+    border: none;
+    margin-left: 2%;
+  }
+
+  .container {
+    flex-basis: 96%;
+    margin-left: 0;
+  }
+
+  #top-container {
+    flex-basis: 96%;
+    margin-left: 0;
+  }
+
+  #top-card {
+    margin-left: 0;
+  }
+
+  .card {
+    margin-left: 0;
+  }
+
+ .footer-block {
+   flex-direction: column;
+  }
+
+  .contact-me {
+    border: none;
+  }
+
+  .card-descr {
+    width: 60%;
+  }
+  
+  .top-descr {
+   width: 52%;
+  }
+  
+  .project-descr {
+    font-size: 80%;
+  }
+  
+  .project-text {
+   font-size: 75%;
+  }
+
+  .card-placeholder {
+    left: 0.5%;
+  }
+
+  .card-top {
+    left: 0.5%;
+    bottom: 3%;
+  }
+
 }
