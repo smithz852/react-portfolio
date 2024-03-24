@@ -1,5 +1,5 @@
 * {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 html {
@@ -9,20 +9,20 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(223, 231, 255) !important;
+  background-color: rgb(235, 235, 211) !important;
   display: block !important;
 }
 
 h1 {
   flex-basis: 50%;
   flex-wrap: nowrap;
-  font-size: 32pt !important;
+  font-size: 32pt;
   margin-left: 3%;
 }
 
 h2 {
   font-size: 30pt !important;
-  color: black !important;
+  color: rgb(26, 24, 27);
   text-align: center;
   padding: 1%;
   margin: 0;
@@ -31,7 +31,7 @@ h2 {
 
 h3 {
   font-size: 20pt;
-  color: black;
+  color: rgb(26, 24, 27);
   margin: 0%;
   width: 141px;
   padding-right: 5%;
@@ -48,7 +48,7 @@ p {
 }
 
  a {
-    color: black;
+    color: rgb(26, 24, 27);
     text-decoration: none;
  }
 
@@ -64,7 +64,7 @@ footer {
 
  header {
   display: flex;
-  background-color: rgb(98, 96, 243);
+  background-color: rgb(57, 54, 255);
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -100,7 +100,7 @@ li {
   position: relative;
   width: 230px;
   height: 300px;
-  border: black solid 3px;
+  border: rgb(26, 24, 27) solid 3px;
   border-radius: 10% 10% 10% 10%;
   margin-left: 1%;
 }
@@ -111,7 +111,7 @@ img {
 
 .snapshotContainer {
    padding: 1%;
-   border-bottom: 3px solid black;
+   border-bottom: 3px solid rgb(26, 24, 27);
 }
 
 .snapshotHeader {
@@ -162,7 +162,7 @@ img {
 }
 
 .cycleContainer {
-  border: 2px black solid;
+  border: 2px rgb(26, 24, 27) solid;
   height: 600px;
   width: 600px;
 }
@@ -172,7 +172,7 @@ img {
   justify-content: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  border: 30px solid black;
+  border: 30px solid rgb(26, 24, 27);
   margin-left: 30%;
   margin-right: 30%;
   border-radius: 10px 10px 10px 10px;
@@ -183,7 +183,6 @@ img {
   position: relative;
   display: flex;
   flex-flow: wrap-reverse;
-  border-left: 5px solid aqua ;
 }
 /* Sets basis for four smallest buttons in work section */
 .container {
@@ -191,14 +190,14 @@ img {
   flex-basis: 41%;
   margin: 3%;
   text-align: center;
-  color: black;
+  color: rgb(26, 24, 27);
 }
 /* specs for large picture */
 #top-container {
   position: relative;
   flex-basis: 88%;
   text-align: center;
-  color: black;
+  color: rgb(26, 24, 27);
   margin-left: 1%;
 }
 /* gurther card positioning and design for four smallest buttons */
@@ -250,16 +249,12 @@ img {
 
  .footer-block {
   display: flex;
-  background-color: rgb(98, 96, 243);
+  background-color: rgb(57, 54, 255);
   width: 100%;
   align-items: center;
   margin-top: 5%;
 }
 
-.contact-me {
-  border-left: aqua solid 5px;
-  height: 110px;
-}
 
 .myButton{
     cursor:pointer;
