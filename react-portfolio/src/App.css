@@ -98,8 +98,8 @@ li {
 /* Parameters for self portrait in about me section */
 #portrait {
   position: relative;
-  width: 200px;
-  height: 265px;
+  width: 230px;
+  height: 300px;
   border: black solid 3px;
   border-radius: 10% 10% 10% 10%;
   margin-left: 1%;
@@ -112,6 +112,18 @@ img {
 .snapshotContainer {
    padding: 1%;
    border-bottom: 3px solid black;
+}
+
+.snapshotHeader {
+  position: absolute;
+  font-size: 34pt;
+  left: 20%;
+  top: 7%;
+  font-weight: bold;
+}
+
+.marginAdjustment {
+  margin-top: 3%;
 }
 
 .logoContainer {
