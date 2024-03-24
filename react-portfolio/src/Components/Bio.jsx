@@ -6,12 +6,11 @@ import uclaLogo from '../assets/uclaLogo.png'
 export function Bio() {
   return (
     <>
-    <h2>Snapshot</h2>
   <div className="snapshotContainer">
   <div className="flex" style={{justifyContent: "space-evenly"}}>
     <img id="portrait" src={headshot} alt="Picture of Zach" />
     <div className="snapshotTopics">
-      <div>
+      <div className="marginAdjustment">
          <ul className="snapshotUl">
           <div className="snapshotFlex">
           <p className="achievments">B.S. in Business Management</p>
@@ -38,7 +37,7 @@ export function Bio() {
          </ul>
         </div>
         <div className="snapshotFlex">
-        <p className="bioCloser">Strong growth mindset with a multide of hobbies and pastimes</p>
+        <p className="bioCloser">Passionately goal-oriented with an unwavering commitment to personal growth, complemented by a diverse array of interests and an insatiable thirst for learning.</p>
         <button>Read Full Bio</button>
         </div>
          </ul>
