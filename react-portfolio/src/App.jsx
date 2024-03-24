@@ -3,6 +3,7 @@ import React from 'react';
 import { PortfolioNavbar } from './Components/PortfolioNavbar'
 
 import { Outlet } from 'react-router';
+import { FooterComp } from './Components/FooterComp';
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <main>
       <Outlet />
       </main>
+      <FooterComp />
       
      
     </>

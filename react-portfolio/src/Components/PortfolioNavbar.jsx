@@ -21,7 +21,12 @@ function changePage() {
             About Me
             </Link>
           </li>
-          <li> Work</li>
+          <li> <Link to='/Work' onClick={() => {
+              let path = '/Work'
+              changePage(path);
+          }} >
+            Work
+            </Link></li>
           <li>Contact Me</li>
           <li>Resume</li>
         </ul>
