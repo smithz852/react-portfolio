@@ -14,19 +14,19 @@ export function Bio() {
       <div>
          <ul className="snapshotUl">
           <div className="snapshotFlex">
-          <h4>B.S. in Business Management</h4>
+          <p className="achievments">B.S. in Business Management</p>
           <div className="logoContainer">
           <img src={lbLogo} alt="CSULB Logo" />
           </div>
           </div>
           <div className="snapshotFlex">
-            <h4>Fullstack Web Development Certificate</h4>
+            <p className="achievments">Fullstack Web Development Certificate</p>
             <div className="logoContainer">
             <img src={uclaLogo} alt="UCLA Logo" />
             </div>
           </div>
           <div className="snapshotFlex">
-        <h4>Industry Experience In:</h4>
+        <p className="achievments">Industry Experience In:</p>
          <ul style={{display: "block"}}>
           <div className="workHistoryLi">
           <li>Automotive</li>

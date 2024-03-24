@@ -9,24 +9,23 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(223, 231, 255);
+  background-color: rgb(223, 231, 255) !important;
   display: block !important;
 }
 
 h1 {
   flex-basis: 50%;
   flex-wrap: nowrap;
-  font-size: 32pt;
+  font-size: 32pt !important;
   margin-left: 3%;
 }
 
 h2 {
-  font-size: 30pt;
-  color: black;
+  font-size: 30pt !important;
+  color: black !important;
   text-align: center;
   padding: 1%;
   margin: 0;
-  border-bottom: 3px solid black
   ;
 }
 
@@ -67,6 +66,8 @@ footer {
   display: flex;
   background-color: rgb(98, 96, 243);
   width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 img {
@@ -86,6 +87,7 @@ ul {
   list-style: none;
   text-align: center;
   padding: 0;
+  margin: 0 !important;
 }
 
 li {
@@ -137,10 +139,33 @@ img {
   margin: 0;
 }
 
+.achievments {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
 .bioCloser {
   font-size: 16pt;
   font-weight: bold;
 }
+
+.cycleContainer {
+  border: 2px black solid;
+  height: 600px;
+  width: 600px;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 30px solid black;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10px 10px 10px 10px;
+}
+
 /* flex box specs for work section */
 .work-flexbox {
   position: relative;

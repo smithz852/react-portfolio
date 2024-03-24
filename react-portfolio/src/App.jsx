@@ -11,7 +11,7 @@ function App() {
     <>
       <PortfolioNavbar />
       <Bio />
-      {/* <Projects /> */}
+      <Projects />
       <FooterComp />
     </>
   );
