@@ -255,6 +255,11 @@ img {
   margin-top: 5%;
 }
 
+.footerMargin {
+  margin-top: 2%;
+  padding: 0;
+}
+
 
 .myButton{
     cursor:pointer;
