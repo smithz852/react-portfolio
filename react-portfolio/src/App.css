@@ -30,12 +30,9 @@ h2 {
 }
 
 h3 {
-  font-size: 20pt;
-  color: rgb(26, 24, 27);
-  margin: 0%;
-  width: 141px;
-  padding-right: 5%;
-  margin-left: 3%;
+  font-size: 50pt !important;
+  color: rgb(57, 54, 255) !important;
+  font-weight: bold !important;
 }
 
 h4 {
@@ -92,6 +89,7 @@ ul {
 
 li {
   flex: 1 1 200px;
+  font-size: 14pt;
 }
 
 
@@ -170,11 +168,11 @@ img {
 .carousel-container {
   display: flex;
   justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
   border: 30px solid rgb(26, 24, 27);
-  margin-left: 30%;
-  margin-right: 30%;
+  border-bottom: 50px solid black;
+  border-top: 50px solid black;
+  margin-left: 25%;
+  margin-right: 25%;
   border-radius: 10px 10px 10px 10px;
 }
 
