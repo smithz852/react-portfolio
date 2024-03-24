@@ -193,6 +193,22 @@ img {
   justify-content: center;
 }
 
+.projectContainer {
+  margin-top: 3%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.appContainer {
+  margin-top: 3%;
+  margin-right: 5%;
+  margin-left: 7%;
+}
+
+.workTitle {
+  text-decoration: underline;
+}
+
 .cycleContainer {
   border: 2px rgb(26, 24, 27) solid;
   height: 600px;
@@ -215,11 +231,12 @@ img {
   position: relative;
   display: flex;
   flex-flow: wrap-reverse;
+  /* border-left: 3px solid black; */
 }
 /* Sets basis for four smallest buttons in work section */
 .container {
   position: relative;
-  flex-basis: 41%;
+  flex-basis: 33%;
   margin: 3%;
   text-align: center;
   color: rgb(26, 24, 27);

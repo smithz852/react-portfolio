@@ -6,6 +6,7 @@ import './index.css';
 
 import { Home } from './Pages/Home.jsx'
 import { AboutMe } from './Pages/AboutMe.jsx'
+import { Work } from './Pages/Work.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/AboutMe',
         element: <AboutMe />
+      },
+      {
+        path: '/Work',
+        element: <Work />
       },
     ],
   },
