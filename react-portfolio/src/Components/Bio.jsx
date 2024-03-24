@@ -1,9 +1,19 @@
 import React from "react"
+import { useNavigate } from 'react-router-dom'
 import headshot from '../assets/IMG_1304.jpg'
 import lbLogo from '../assets/lbState.webp'
 import uclaLogo from '../assets/uclaLogo.png'
 
+
+
 export function Bio() {
+
+  const navigate = useNavigate();
+  function goToBio() {
+    let path = '/AboutMe'
+    navigate(path);
+  }
+
   return (
     <>
   <div className="snapshotContainer">
@@ -38,7 +48,7 @@ export function Bio() {
         </div>
         <div className="snapshotFlex">
         <p className="bioCloser">Passionately goal-oriented with an unwavering commitment to personal growth, complemented by a diverse array of interests and an insatiable thirst for learning.</p>
-        <button>Read Full Bio</button>
+        <button onClick={goToBio}>Read Full Bio</button>
         </div>
          </ul>
       </div>
