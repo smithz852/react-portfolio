@@ -20,7 +20,7 @@ export function Projects() {
         <img src={recipeFinder} alt="Picture of recipe finder website" />
         </a>
         <Carousel.Caption>
-          <h3>Recipe Finder</h3>
+          <h3 className="background-h3">Recipe Finder</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,7 +28,7 @@ export function Projects() {
         <img src={sportSquares} alt="Picture of sport squares app" />
         </a>
         <Carousel.Caption>
-          <h3>Sport Squares</h3>
+          <h3 className="background-h3">Sport Squares</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,7 +36,7 @@ export function Projects() {
         <img src={ecommApi} alt="Image of ecommerce api" />
         </a>
         <Carousel.Caption>
-          <h3>eCommerce API</h3>
+          <h3 className="background-h3">eCommerce API</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
