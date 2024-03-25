@@ -14,6 +14,10 @@
 
 A portflio of my work and accomplishments built using React.
 
+Netlify Deploy: https://deft-pithivier-7fd3d9.netlify.app/
+
+GitHub Repo: 
+
 ## Installations
 
 NA
