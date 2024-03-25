@@ -16,7 +16,7 @@ A portflio of my work and accomplishments built using React.
 
 Netlify Deploy: https://deft-pithivier-7fd3d9.netlify.app/
 
-GitHub Repo: 
+GitHub Repo: https://github.com/smithz852/react-portfolio.git
 
 ## Installations
 
