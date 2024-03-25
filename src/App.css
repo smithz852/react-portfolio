@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 50pt !important;
+  font-size: 35pt !important;
   color: rgb(57, 54, 255) !important;
   font-weight: bold !important;
 }
@@ -38,6 +38,8 @@ h3 {
 .background-h3 {
   background-color: rgb(26, 24, 27);
   opacity: 90%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 h4 {
@@ -72,12 +74,23 @@ footer {
   padding-bottom: 1%;
 }
 
+.portfolioTitle {
+  flex-basis: 50%;
+  flex-wrap: nowrap;
+  font-size: 35pt;
+  margin-left: 1%;
+}
+
 img {
   object-fit: fill;
   max-width: 100%;
 }
 /* sets flex boxes throughout page */
 .flex {
+  display: flex;
+}
+
+.headerFlex {
   display: flex;
 }
 
@@ -184,6 +197,7 @@ img {
 
 .bioHeader {
   margin-top: 5%;
+  padding-right: 3%;
 }
 
 .bioSig {
@@ -236,8 +250,8 @@ img {
   border: 30px solid rgb(26, 24, 27);
   border-bottom: 50px solid black;
   border-top: 50px solid black;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 23%;
+  margin-right: 23%;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -369,175 +383,250 @@ img {
 .myButton:hover {opacity: 1}
 
 /* Media screen section */
+@media screen and (max-width: 1440px) {
+ h3 {
+   font-size: 35pt !important;
+ }
+ .background-h3 {
+  margin-right: 10%;
+    margin-left: 10%;
+ }
+ .carousel-container {
+  margin-left: 16%;
+    margin-right: 16%;
+}
+.contactContainer {
+  margin-bottom: 10%;
+}
+}
 
-@media screen and (max-width: 1024px) {
-  h2 {
-     margin-left: 4%;
+@media screen and (max-width: 1365px) {
+  p {
+    font-size: 15pt;
+  }
+
+  .travelContainer {
+    max-width: 320px;
+  }
+  .contactContainer {
+    margin-bottom: 15%;
   }
 }
 
+@media screen and (max-width: 1275px) {
+  .bioCloser {
+    font-size: 13pt;
+  }
+  .contactContainer {
+    margin-bottom: 20%;
+  }
+}
 
-@media screen and (max-width: 920px) {
- p {
-font-size: 13pt; }
- 
-  .card-descr {
-    width: 90%;
+@media screen and (max-width: 1185px) {
+ h3 {
+  font-size: 30pt !important;
  }
+ /* h2 {
+  font-size: 25pt !important;
+ } */
+.carousel-container {
+  margin-left: 14%;
+    margin-right: 14%;
+}
 
- .top-descr {
-   width: 50%;
+.achievments {
+  font-size: 13pt;
+}
+.project-descr {
+  font-size: 12pt;
+}
+}
+
+@media screen and (max-width: 1135px) {
+  .logoContainer {
+    height: 150px;
+    width: 150px;
+  }
+  #portrait {
+    width: 225px;
+    height: 245px;
+  }
+  .achievments {
+    font-size: 11pt;
+  }
+  .bioCloser {
+    font-size: 11pt;
+  }
+ li {
+  font-size: 11pt;
  }
-
- .project-descr {
-  font-size: 85%;
+ .container {
+  flex-basis: 45%;
  }
-
- .project-text {
-   font-size: 85%;
+ .contactContainer {
+  margin-bottom: 25%;
+  margin-top: 15%;
  }
 }
 
+@media screen and (max-width: 1035px) {
+  .travelContainer {
+    max-width: 275px;
+  }
+}
 
+@media screen and (max-width: 960px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  #portrait {
+    width: 170px;
+    height: 215px;
+  }
+  .snapshotUl {
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+  }
+  .snapshotFlex {
+    padding: 3%;
+  }
+  .carousel-container {
+    margin-left: 9%;
+      margin-right: 9%;
+  }
+  .bioPage {
+    border-left: 0;
+  }
+  .bioHeader {
+    margin-left: 5%;
+    text-decoration: underline;
+  }
+  .bioSig {
+    font-size: 20pt;
+  }
+  .travelContainer {
+    max-width: 250px;
+  }
+  .contactContainer {
+    margin-bottom: 25%;
+  margin-top: 20%;
+  }
+}
 
-@media screen and (max-width: 768px) {
-  p {
+@media screen and (max-width: 805px) {
+  .carousel-container {
+    margin-left: 5%;
+      margin-right: 5%;
+  }
+  .snapshotFlex {
+    flex-basis: 33%;
+  }
+  .travelFlex {
+    flex-wrap: wrap;
+  }
+  .travelContainer {
+    margin: 3%;
+  }
+  .container {
+    flex-basis: 50%;
+  }
+  .contactContainer {
+    margin-bottom: 30%;
+  margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .portfolioTitle {
+    font-size: 25pt;
+  }
+  h2 {
+    font-size: 25pt !important;
+  }
+  .carousel-container {
+    border: 20px solid rgb(26, 24, 27);
+  border-bottom: 20px solid black;
+  border-top: 20px solid black;
+    margin: 0;
+  }
+  #portrait {
+    width: 150px;
+    height: 185px;
+  }
+  .logoContainer {
+    width: 100px;
+    height: 100px;
+  }
+  .snapshotUl {
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+  }
+  .snapshotFlex {
+    padding: 3%;
+  }
+  .achievments {
+    font-size: 9pt;
+  }
+  .bioCloser {
+    font-size: 9pt;
+  }
+ li {
+  font-size: 9pt;
+ }
+ .contactContainer {
+  margin-bottom: 38%;
+margin-top: 38%;
+}
+.contactBtn {
+  font-size: 14pt;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .snapshotUl {
+    display: block;
+    padding: 0;
+  }
+  .achievments {
     font-size: 12pt;
   }
-  
-  .inline   {
-      flex: 1 2 0;
-   }
-
-   header {
-     text-align: center;
-     flex-direction: column;
-     width: 100%;
-   }
-
-   h2 {
-      padding-right: 4%;
-   }
-
-  ul  {
-justify-content: end;
-    padding-left: 0;
-    
-   }
-
-   li {
-    max-height: 50px;
-align-content: start;   }
-
-  #portrait {
-   align-content: center;
- }
-
- .work-flexbox {
-  justify-content: start;
-  margin-left: 3.5%;
- }
-
- .card-descr {
-  width: 82%;
-}
-
-.top-descr {
- width: 52%;
-}
-
-.project-descr {
-  font-size: 67%;
-}
-
-.project-text {
- font-size: 55%;
-}
-
-}
-
-@media screen and (max-width: 620px) {
-  h1 {
-    min-width: 95%;
+  .bioCloser {
+    font-size: 12pt;
   }
-
-  h3 {
-    margin-top: 2%;
-    margin-left: 0%;
-    padding: 0%;
-  }
-
- body {
-  padding: 0px;
-  margin: 0;
+ .carousel-container {
+  border: 10px solid rgb(26, 24, 27);
+  border-bottom: 10px solid black;
+  border-top: 10px solid black;
  }
-
+ h3 {
+  font-size: 20pt !important;
+ }
+ .background-h3 {
+  margin-right: 15%;
+    margin-left: 15%;
+ }
  ul {
-  flex-direction: column;
+  display: block;
+  padding: 0 !important;
  }
- 
- div {
-  flex-direction: column;
+ #portrait {
+  text-align: -webkit-center;
  }
-
- .work-sidebar {
-    margin-bottom: 3%;
+ .headerFlex {
+  display: block;
  }
-
-  .work-flexbox {
-    border: none;
-    margin-left: 2%;
-  }
-
-  .container {
-    flex-basis: 96%;
-    margin-left: 0;
-  }
-
-  #top-container {
-    flex-basis: 96%;
-    margin-left: 0;
-  }
-
-  #top-card {
-    margin-left: 0;
-  }
-
-  .card {
-    margin-left: 0;
-  }
-
- .footer-block {
-   flex-direction: column;
-  }
-
-  .contact-me {
-    border: none;
-  }
-
-  .card-descr {
-    width: 60%;
-  }
-  
-  .top-descr {
-   width: 52%;
-  }
-  
-  .project-descr {
-    font-size: 80%;
-  }
-  
-  .project-text {
-   font-size: 75%;
-  }
-
-  .card-placeholder {
-    left: 0.5%;
-  }
-
-  .card-top {
-    left: 0.5%;
-    bottom: 3%;
-  }
-
+ .portfolioTitle {
+  display: block;
+  width: 100%;
+  text-align: center;
+ }
+ li {
+  font-size: 15pt;
+ }
+ .container {
+  flex-basis: 85%;
+ }
 }
+
