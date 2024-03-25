@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import resumePdf from '../assets/resume2024.pdf'
 
 export function PortfolioNavbar() {
 
@@ -11,7 +12,10 @@ function changePage() {
   return (
   <>
   <header className="flex">
-        <h1>Zachary Smith</h1>
+        <h1><Link to='/' onClick={() => {
+              let path = '/'
+              changePage(path);
+          }}>Zachary Smith</Link></h1>
         <ul>
           <li>
           <Link to='/AboutMe' onClick={() => {
@@ -27,8 +31,13 @@ function changePage() {
           }} >
             Work
             </Link></li>
-          <li>Contact Me</li>
-          <li>Resume</li>
+          <li><Link to='/Contact' onClick={() => {
+              let path = '/Contact'
+              changePage(path);
+          }} >
+            Contact Me
+            </Link></li>
+          <li><a href={resumePdf} target='_blank'>Resume</a></li>
         </ul>
       </header>
       </>

@@ -7,6 +7,7 @@ import './index.css';
 import { Home } from './Pages/Home.jsx'
 import { AboutMe } from './Pages/AboutMe.jsx'
 import { Work } from './Pages/Work.jsx'
+import { Contact } from './Pages/Contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: '/Work',
         element: <Work />
       },
+      {
+        path: '/Contact',
+        element: <Contact />
+      }
     ],
   },
 ]);
