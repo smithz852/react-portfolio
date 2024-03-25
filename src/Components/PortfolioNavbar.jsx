@@ -5,7 +5,7 @@ import resumePdf from '../assets/resume2024.pdf'
 export function PortfolioNavbar() {
 
 const navigate = useNavigate()
-function changePage() {
+function changePage(path) {
   navigate(path);
 }
 
