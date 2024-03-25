@@ -11,11 +11,11 @@ function changePage(path) {
 
   return (
   <>
-  <header className="flex">
-        <h1><Link to='/' onClick={() => {
+  <header className="headerFlex">
+        <span className='portfolioTitle'><Link to='/' onClick={() => {
               let path = '/'
               changePage(path);
-          }}>Zachary Smith</Link></h1>
+          }}>Zachary Smith</Link></span>
         <ul>
           <li>
           <Link to='/AboutMe' onClick={() => {

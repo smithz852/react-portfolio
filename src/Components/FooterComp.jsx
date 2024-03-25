@@ -5,7 +5,7 @@ export function FooterComp() {
 
   return (
     <>
-    <header className="flex footerMargin">
+    <header className="headerFlex footerMargin">
           <h2>Contact Me</h2>
           <ul>
             <li><a href="tel: +18057603230">(805) 760-3230</a></li>

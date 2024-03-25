@@ -36,7 +36,7 @@ export function Bio() {
           </div>
           <div className="snapshotFlex">
         <p className="achievments">Industry Experience In:</p>
-         <ul style={{display: "block"}}>
+         <ul style={{display: "block", padding: 0}}>
           <div className="workHistoryLi">
           <li>Automotive</li>
           <li>Music Marketing</li>
