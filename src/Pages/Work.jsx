@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import sportsSquares from '../assets/sportSquares.png'
 import recipeFinder from '../assets/recipeFinder.png'
-import tbdPic from '../assets/tbd.jpg'
+import pocketporridge from '../assets/pocketporridge.png'
 import codingQuiz from '../assets/codingQuiz.png'
 import readmeGenerator from '../assets/readmeGenerator.png'
 import ecommCopy from '../assets/ecommCopy.png'
@@ -33,7 +33,9 @@ export function Work() {
           </div>
         </div>
         <div className="container">
-        <img src={tbdPic} className="card myButton"/>
+          <a href="https://github.com/KyleGru/pocket-porridge">
+        <img src={pocketporridge} className="card myButton"/>
+        </a>
           <div className="card-placeholder card-descr"><span className="project-descr">Meme Generator</span>
               </div>
         </div>
